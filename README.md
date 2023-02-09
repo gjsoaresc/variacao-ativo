@@ -29,7 +29,8 @@ ng start --open
 
 ## View active variations
 
-**After dev server is started router will automatically redirect to PETR4.SA active**
+**After dev server is started router will automatically redirect to PETR4.SA active,**
+
 **To view another active simply change the url with the active name like:**
 
 ```bash
