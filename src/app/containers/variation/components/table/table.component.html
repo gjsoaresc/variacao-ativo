@@ -1,0 +1,22 @@
+<table class="table table-fixed" *ngIf="response">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Date</th>
+      <th>Value</th>
+      <th>Variation D-1</th>
+      <th>Variation since the beginning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let open of response.open; index as i;">
+      <tr>
+        <td>{{ i + 1 }}</td>
+        <td>{{ response.labels[i] }}</td>
+        <td>{{ open | currency: response.meta.currency }}</td>
+        <td>{{ response.result[i] }}%</td>
+        <td>{{ response.current[i] }}%</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>

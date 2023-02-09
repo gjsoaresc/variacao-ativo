@@ -1,0 +1,7 @@
+:host {
+  @apply flex justify-center items-center w-full;
+
+  .chart {
+    @apply w-4/5;
+  }
+}
