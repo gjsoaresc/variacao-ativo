@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": [
+    "source.organizeImports",
+    "source.fixAll"
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "files.eol": "\r\n",
+  "files.associations": {
+    "*.scss": "postcss",
+    "*__tmpl__": "html"
+  },
+}
