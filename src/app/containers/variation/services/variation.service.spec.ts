@@ -13,4 +13,12 @@ describe('VariationService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should have a getChart method', () => {
+    expect(service.getChart).toBeTruthy();
+  });
+
+  it('should return data', () => {
+    expect(service.getChart('PETR4.SA')).toBeTruthy();
+  });
 });

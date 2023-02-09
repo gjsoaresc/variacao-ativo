@@ -20,4 +20,9 @@ describe('TableComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a table', () => {
+    const table = fixture.nativeElement.querySelector('table');
+    expect(table).toBeTruthy();
+  });
 });

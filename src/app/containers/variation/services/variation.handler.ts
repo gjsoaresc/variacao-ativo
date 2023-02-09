@@ -9,7 +9,7 @@ export const variationHandler = (res: any) => {
   }
 
   const calc = (open: any, close: any) => {
-    return ((open - close) / open * 100).toFixed(2)
+    return ((open - close) / open * 100).toFixed(2);
   }
 
   res.chart.result.forEach((result: any) => {
@@ -20,12 +20,12 @@ export const variationHandler = (res: any) => {
 
       result.timestamp.forEach((timestamp: any) => {
         data.labels.push(new Date(timestamp * 1000).toLocaleDateString('pt-BR'));
-      })
+      });
 
       quote.open.forEach((_: any, index: number) => {
-        data.result.push(calc(quote.open[index - 1], quote.open[index]))
-        data.current.push(calc(quote.open[0], quote.open[index]))
-      })
+        data.result.push(calc(quote.open[index - 1], quote.open[index]));
+        data.current.push(calc(quote.open[0], quote.open[index]));
+      });
     })
   });
 
@@ -36,10 +36,10 @@ export const variationHandler = (res: any) => {
       data.labels.splice(index, 1);
     }
 
-    return open
+    return open;
   });
 
   data.open.splice(data.open.length - 1, 1);
 
-  return data
+  return data;
 }

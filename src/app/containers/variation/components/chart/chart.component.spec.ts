@@ -20,4 +20,9 @@ describe('ChartComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a chart', () => {
+    const chart = fixture.nativeElement.querySelector('canvas');
+    expect(chart).toBeTruthy();
+  });
 });
