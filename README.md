@@ -23,3 +23,18 @@ npm i
 ```bash
 ng start --open
 ```
+
+
+---
+
+## View active variations
+
+**After dev server is started router will automatically redirect to PETR4.SA active**
+**To view another active simply change the url with the active name like:**
+
+```bash
+http://localhost:4200/variation/{{active}}
+```
+
+[%5EIXIC](http://localhost:4200/variation/%5EIXIC)
+[%5EGSPC](http://localhost:4200/variation/%5EGSPC)
